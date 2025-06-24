@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body{
-            height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size:cover ;
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: aqua;
+            height: 500px;
+            padding: 10px;
+            position: relative;
         }
 
-        main{
-            background-color: white;
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: rgb(0, 110, 255);
+            height: 200px;
             width: 400px;
-            padding: 10px;
-            margin: auto;
-            border: 1px solid rgba(0, 0, 0, 0.377);
-            border-radius: 14px;
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <h1>Teste de Imagem</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque necessitatibus facilis nam magnam eligendi officia qui placeat veritatis odit incidunt, ipsum repellendus dolorum mollitia beatae repellat cumque expedita vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum veritatis eum voluptate eligendi quam iusto alias, ab hic repudiandae aspernatur soluta amet molestias aut facilis, ad deserunt nisi illo natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur facilis numquam ducimus consequatur perspiciatis aspernatur excepturi voluptatum, ea officia dolorum dicta odit sapiente ipsa reprehenderit vero aliquam assumenda non!</p>
-    </main>
+  <section id="container">
+    <article id="conteudo">
+
+    </article>
+  </section>  
 </body>
 </html>
