@@ -15,17 +15,29 @@
     h1{
         text-align: center;
     }
-    
+
     /*tabela*/
     table{
         width: 100%;
         max-width: 800px;
         margin: auto;
+        position: relative;
         border-collapse: collapse;
 
     }
 
+    caption{
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
    thead th, tfoot th, tfoot td {
+    background-color: #EAECF0;
+}
+
+thead > tr > th{
+    position: sticky;
+    top: 0;
     background-color: #EAECF0;
 }
 
@@ -39,9 +51,15 @@
         min-height: 40px;
     }
 
+    tbody > tr:nth-child(even) {
+        background-color: rgb(167, 206, 230);
+    }
+
     tbody tr:hover{
         background-color: #EAF3FF;
     }
+
+    
 
     .numero{
         text-align: right;
@@ -49,11 +67,12 @@
 </style>
 </head>
 <body>
-    <h1>População por Estado 2024</h1>
+    <h1>Tabela Grande</h1>
     <table>
+        <caption>População por Estado 2024</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -167,7 +186,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero">212 583 750	</td>
             </tr>
         </tfoot>
