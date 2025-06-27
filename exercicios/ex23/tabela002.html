@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>População por Estado</title>
 <style>
+
+    /*geral*/
     body{
         font-family: sans-serif;
     }
 
+    /*título*/
     h1{
         text-align: center;
     }
-
+    
+    /*tabela*/
     table{
-        width: 500px;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
         border-collapse: collapse;
 
     }
 
-    thead{
-        background-color: #EAECF0;
-        height: 45px;
+   thead th, tfoot th, tfoot td {
+    background-color: #EAECF0;
+}
 
-    }
-
-    th{
+    th, td{
         border: 1px solid #A2A9B1;
-        padding: 5px;
+        padding: 10px;
     }
 
-    td{
+    tr{
         background-color: #F8F9FA;
-        border: 1px solid #A2A9B1;
-        padding: 5px;
+        min-height: 40px;
     }
 
-    tr:hover{
+    tbody tr:hover{
         background-color: #EAF3FF;
+    }
+
+    .numero{
+        text-align: right;
     }
 </style>
 </head>
@@ -75,7 +82,7 @@
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9 539 029	</td>
+                <td class="numero">9 539 029</td>
             </tr>
             <tr>
                 <td>Ceará</td>
@@ -129,7 +136,41 @@
                 <td>Distrito Federal</td>
                 <td class="numero">2 982 818</td>
             </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2 901 895</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2 291 077</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1 746 227</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1 577 342</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">880 631	</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">802 837</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">716 793</td>
+            </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="numero">212 583 750	</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
