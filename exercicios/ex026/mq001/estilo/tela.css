@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Estilo para tela */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+header > h1{
+    background-color: rgb(15, 15, 75);
+    color: aliceblue;
+    text-align: center;
+}
+
+menu ul{
+    list-style-type: none;
+    background-color: rgb(15, 15, 75);
+    color: aliceblue;
+}
+
+menu li{
+    background-color:rgb(29, 29, 99);
+    display: inline-block;
+    padding: 10px;
+}
+
+article{
+    width: 600px;
+    margin: auto;
+    display: block;
+    text-align: justify;
+}
+
+article h2{
+    padding: 10px;
+    text-align: center;
+}
