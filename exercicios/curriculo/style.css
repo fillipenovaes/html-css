@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: white;
+    background-image: linear-gradient(to right, #e52d27, #b31217);
+    padding: 20px;
+    border-radius: 20px;
+    
+    
+}
+
+section#info{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+section#perfil img{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    
+}
+
+p#pin img{
+    width: 12px;
+    
+}
+
+section#icones {
+    text-align: right;
+    
+}
+
+section#icones a img{
+width: 35px;
+display: inline-block;
+}
